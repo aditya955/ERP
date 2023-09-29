@@ -1,6 +1,8 @@
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
+import Container from '../../components/container/Container'
+
 import './style.scss'
 import React from 'react'
 
@@ -9,9 +11,9 @@ const Home = () => {
     <div className='home'>
       <Sidebar />
       <Header />
-      <div className="main-container">
-
-      </div>
+      <Container>
+        <p>Hello World</p>
+      </Container>
       <Footer />
     </div>
   )

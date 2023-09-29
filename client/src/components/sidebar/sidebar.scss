@@ -1,4 +1,69 @@
 .sidebar {
-    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
+    width: 320px;
+    background-color: #177aeb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    &__logo {
+        display: grid;
+        place-items: center;
+        height: 120px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    &__menu {
+        position: relative;
+
+        a{
+            text-decoration: none;
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            place-content: flex-start;
+            padding: 1rem 3rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: white;
+            transition: color 0.3s ease-in-out;
+
+            &.active {
+                color: #177aeb;
+            }
+
+            &:not(.active):hover {
+            //    what hovering style should be
+            }
+
+            &__icon {
+                margin-right: 1rem;
+
+                i {
+                    font-size: 1.75rem;
+                }
+            }
+
+            &__text{
+                text-decoration: none;
+            }
+        }
+
+        &__indicator {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: calc(100% - 40px);
+            border-radius: 10px;
+            background-color: white;
+            z-index: -1;
+            transform: translateX(-50%);
+            transition: 0.3s ease-in-out;
+        }
+    }
 }
