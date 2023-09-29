@@ -1,0 +1,171 @@
+// Error404 page styles
+.error404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #e6f3ff);
+
+    .text {
+        max-width: 600px;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 2.0em;
+            margin-bottom: 10px;
+            color: #555;
+            word-wrap: break-word;
+            max-width: 70%;
+            margin: 1em auto;
+        }
+
+        h5 {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+        p {
+            font-size: 1em;
+
+            a {
+                color: #007bff;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #0056b3;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .image {
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .text {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            order: -1;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .text {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            h5 {
+                font-size: 1em;
+            }
+        }
+
+        .image {
+            img {
+                max-height: 200px;
+            }
+        }
+    }
+}
+
+// Other Error Page Styles
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #e6f3ff);
+
+    .text {
+        max-width: 600px;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 2.0em;
+            margin-bottom: 10px;
+            color: #555;
+            word-wrap: break-word;
+            max-width: 70%;
+            margin: 1em auto;
+        }
+
+        h5 {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+        p {
+            font-size: 1em;
+
+            a {
+                color: #007bff;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #0056b3;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .text {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .text {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            h5 {
+                font-size: 1em;
+            }
+        }
+    }
+}

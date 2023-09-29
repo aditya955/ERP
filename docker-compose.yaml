@@ -25,7 +25,7 @@ services:
 
   server:
     build: server/
-    command: npm start
+    command: npm run dev
     ports:
       - "5000:5000"
     depends_on:
