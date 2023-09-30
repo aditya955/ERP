@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 const studentSchema = new mongoose.Schema({
   name: String,
   email: String,
-  erp_id: String,
+  erp_id: Number,
   password: String,
   DoB: Date,
+  otp: Number,
   address: String,
   year_of_study: Number,
   admitted_year: Number,
