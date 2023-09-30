@@ -1,0 +1,103 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100%;
+
+  form {
+    background-color: #117aeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(168, 172, 173);
+    padding: 30px;
+    color: white;
+    height: 400px;
+    width: 300px;
+
+    h2 {
+      position: relative;
+      top: 0;
+      margin: 10px 0px 30px 0px;
+    }
+
+    a {
+      color: white;
+      cursor: pointer;
+      margin: 0px;
+    }
+  }
+
+  form > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    .icon {
+      // width: 50px;
+      font-size: x-large;
+      font-weight: bolder;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      color: white;
+    }
+
+    input {
+      color: white;
+      background: transparent;
+      border: transparent;
+      font-size: larger;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      margin: 0px 25px;
+      padding: 0px 5px;
+      height: 30px;
+      width: 70%;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.877);
+      color-scheme: dark;
+    }
+    ::placeholder {
+      color: white;
+      opacity: 1; /* Firefox */
+    }
+
+    ::-ms-input-placeholder {
+      /* Edge 12 -18 */
+      color: white;
+    }
+    input:focus {
+      outline: none;
+    }
+    .date {
+      color: white;
+    }
+  }
+
+  form > button {
+    background-color: white;
+    color: #117aeb;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: fit-content;
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: 1px solid white;
+  }
+
+  p,
+  a {
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
