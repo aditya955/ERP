@@ -1,24 +1,23 @@
+import './library.scss'
+import React from 'react'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Container from '../../components/container/Container'
 
-import './style.scss'
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-const Home = () => {
+const Library = () => {
   return (
-    <div className='home'>
+    <div className='library'>
       <Sidebar />
       <Header />
       <Container>
-        <p>Hello World</p>
-        <h1> Jaishree tu <Link to='/library'>Yaha jaa</Link></h1>
+        <h1> Jaishree tu yaha edit karna</h1>
+        <h2> Container tag pura tera </h2>
+        <p>Apna Library</p>
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
 
-export default Home
+export default Library

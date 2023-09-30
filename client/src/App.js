@@ -5,6 +5,7 @@ import Login from './pages/login/Login';
 import Error404 from './pages/error/Error404';
 // import Error from './pages/error/Error';
 import ForgetPassword from './pages/login/ForgetPassword';
+import Library from './pages/library/Library';
 
 
 const App = () => {
@@ -12,10 +13,18 @@ const App = () => {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/home' element={<Home />} />
-          <Route exact path='/login' element={<Login />} />
-          <Route exact path='/forget-password' element={<ForgetPassword />} />
+          <Route exact path='/'>
+            <Route exact index path='/' element={<Home />} />
+            <Route exact path='home' element={<Home />} />
+          </Route>
+
+          <Route exact path='/library'>
+            <Route exact index path='' element={<Library />} />
+            {/* <Route exact path='books' element={<Books />} /> */}
+          </Route>
+          
+          <Route exact path='login' element={<Login />} />
+            <Route exact path='forget-password' element={<ForgetPassword />} />
           <Route exact path='*' element={<Error404 />} />
         </Routes>
       </Router>

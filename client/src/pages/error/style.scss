@@ -3,10 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+    width: calc(100% - 20px);
     text-align: center;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #ffffff, #e6f3ff);
+    border-radius: 10px;
 
     .text {
         max-width: 600px;
