@@ -1,11 +1,10 @@
 .sidebar {
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+    height: 100vh;
     width: 320px;
     background-color: #177aeb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 99;
 
     &__logo {
         display: grid;

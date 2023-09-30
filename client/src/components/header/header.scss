@@ -1,12 +1,11 @@
 .header {
-    position: fixed;
-    transform: translateX(320px);
+    position: relative;
+    z-index: 99;
+    left: 320px;
     width: calc(100% - 320px);
     height: 70px;
     background-color:white;
-    left: 0;
-    top: 0;
-    z-index: 1000;
+
     display: flex;
     flex-direction: row;
     align-items: center;

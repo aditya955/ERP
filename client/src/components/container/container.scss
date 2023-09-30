@@ -1,8 +1,9 @@
 .main-container{
-    position: absolute;
-    transform: translateX(320px);
-    top: 70px;
-    left: 0;
+    position: relative;
+    left: 320px;
     width: calc(100% - 320px);
-    // background-color: greenyellow;
+    // height: 1200px;
+    background-color: rgba(206, 206, 206, 0.603);
+
+    padding: 10px;
 }
