@@ -34,10 +34,15 @@
 
             &.active {
                 color: #177aeb;
+                transform: scale(1.1);
+                transition: transform 1.5s ease-in-out;
             }
 
             &:not(.active):hover {
             //    what hovering style should be
+                transform: scale(1.2);
+                transition: transform 0.3s ease-in-out;
+                
             }
 
             &__icon {

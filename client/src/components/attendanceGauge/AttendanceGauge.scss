@@ -1,0 +1,57 @@
+.gauge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // background-color: white;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 20px auto;
+    text-align: center;
+    
+    .gauge-background {
+        fill: #f0f0f0;
+    }
+
+    .gauge-progress {
+        fill: none;
+        stroke: #007bff;
+        stroke-width: 15;
+        transition: stroke-dashoffset 0.5s;
+    }
+
+    .gauge-text {
+        font-size: 1.5em;
+        font-weight: bold;
+        fill: #333;
+    }
+
+    .gauge-container {
+        position: relative;
+        height: 100%;
+    }
+
+    .gauge-info {
+        margin-left: 20px;
+        // margin-top: 35px;
+        text-align: left;
+
+        h3 {
+            margin: 10px 0;
+        }
+    }
+
+    .gauge-title {
+        font-size: 2.0em;
+        font-weight: 10px;
+        fill: #333;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .gauge-content {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+}

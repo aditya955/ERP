@@ -25,6 +25,7 @@ services:
 
   server:
     build: server/
+    restart: always
     command: npm run dev
     ports:
       - "5000:5000"
@@ -33,6 +34,7 @@ services:
 
   client:
     build: client/
+    restart: always
     command: npm start
     ports:
       - "3000:3000"

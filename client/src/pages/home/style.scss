@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    direction: row;
+    width: 100%;
+    margin: auto;
+
+    .details,
+    .attendance-gauge,
+    .readmission-status {
+      flex-basis: calc(33.33% - 16px);
+      margin-bottom: 16px;
+      height: 100%;
+    }
+
+    .details {
+        width: 30%;
+        // height: inherit;
+        margin: auto;
+    }
+    .attendance-gauge {
+        width: 30%;
+        // height: inherit;
+        margin: auto;
+    }
+    .readmission-status {
+        width: 30%;
+        // height: inherit;
+        margin: auto;
+    }
+}
+
+
+.student-info {
+    display: flex;
+    width: 65%;
+}
+.user-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.2rem;
+    width: 100%;
+}
+
+.other-user-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.row2 {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: col;
+    width: 100%;
+    justify-content: center;
+    
+    .readmission-status {
+        line-height: 2.5rem;
+    }
+}
+.marks-overview {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    line-height: 3.5rem;
+    
+
+    .marks-col1 {
+        margin: auto;
+    }
+    .marks-col2 {
+        margin: auto;
+    }
+}
