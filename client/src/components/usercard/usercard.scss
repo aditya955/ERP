@@ -1,27 +1,30 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 10px 5px;
-    margin-left: 0px;
-    padding-left: 0px;
-    // margin: auto;
-    display: inline-block;
-    text-align: center;
-    max-height: 320px;
-    background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  margin: 10px 5px;
+  margin-left: 0px;
+  padding-left: 0px;
+  // margin: auto;
+  display: inline-block;
+  text-align: center;
+  max-height: 320px;
+  background-color: white;
 
-    img {
-        border-radius: 8px;
-    }
+  img {
+    border-radius: 8px;
+  }
 
-    .year {
-        color: grey;
-        font-size: 18px;
-    }
+  .year {
+    color: grey;
+    font-size: 18px;
+  }
 
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
 }
