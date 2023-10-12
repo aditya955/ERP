@@ -17,9 +17,9 @@
     .details,
     .attendance-gauge,
     .readmission-status {
-      flex-basis: calc(33.33% - 16px);
-      margin-bottom: 16px;
-      height: 100%;
+        flex-basis: calc(33.33% - 16px);
+        margin-bottom: 16px;
+        height: 100%;
     }
 
     .details {
@@ -27,11 +27,13 @@
         // height: inherit;
         margin: auto;
     }
+
     .attendance-gauge {
         width: 30%;
         // height: inherit;
         margin: auto;
     }
+
     .readmission-status {
         width: 30%;
         // height: inherit;
@@ -44,6 +46,7 @@
     display: flex;
     width: 65%;
 }
+
 .user-data {
     display: flex;
     flex-direction: column;
@@ -62,28 +65,71 @@
     flex-direction: row;
     margin-top: 25px;
 }
+
 .row2 {
     margin-top: 25px;
     display: flex;
     flex-direction: col;
     width: 100%;
     justify-content: center;
-    
+
     .readmission-status {
         line-height: 2.5rem;
     }
 }
+
 .marks-overview {
     display: flex;
     flex-direction: row;
     margin: auto;
     line-height: 3.5rem;
-    
+
 
     .marks-col1 {
         margin: auto;
     }
+
     .marks-col2 {
         margin: auto;
+    }
+}
+
+.row3 {
+    .assignment-table {
+        width: 100%;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        // border-spacing: auto 0;
+        border-collapse: separate;
+
+        button {
+            // border: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            background: none;
+            cursor: pointer;
+            outline: none;
+            margin-top: 30px;
+        }
+
+        button:hover {
+            scale: 1.1;
+        }
+
+        .assignment-details {
+            border-bottom: 1px solid black;
+            // margin-top: 10px;
+            height: 100px;
+        }
+
+        .assignment-details:hover {
+            background-color: #97a7d9;
+        }
     }
 }
