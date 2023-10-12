@@ -14,6 +14,14 @@
         font-weight: 700;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: white;
+        text-decoration: none;
+    }
+
+    &__logo:hover {
+        text-decoration: none;
+        color: blue;
+        scale: 1.3;
+        transition: 1s ease-in-out;
     }
 
     &__menu {

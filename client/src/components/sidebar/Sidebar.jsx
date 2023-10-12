@@ -28,15 +28,17 @@ const Sidebar = () => {
   // change active index
   useEffect(() => {
     const curPath = window.location.pathname.split('/')[1];
-    const activeItem = Array.from(sidebarRef.current.children).findIndex(item => item.getAttribute('href') === `/${curPath}`)-1;
+    const activeItem = Array.from(sidebarRef.current.children).findIndex(item => item.getAttribute('href') === `/${curPath}`) - 1;
     setActiveIndex(curPath.length === 0 ? 0 : activeItem);
     indicatorRef.current.style.transform = `translateX(-50%) translateY(${activeItem * stepHeight}px)`;
   }, [location, stepHeight]);
 
   return <div className='sidebar'>
-    <div className="sidebar__logo">
-      OUR ERP System
-    </div>
+    <Link to="/">
+      <div className="sidebar__logo">
+        OUR ERP System
+      </div>
+    </Link>
     <nav ref={sidebarRef} className="sidebar__menu">
       <div
         ref={indicatorRef}
